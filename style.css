@@ -383,6 +383,17 @@ footer {
     .tamsaBigTitle{
         font-size: 30px;
         padding-left: 0%;
+        margin-left: 10px;
+
+    }
+
+    #자료창고{
+        margin-left: 10px;
+
+    }
+
+    #기사{
+        margin-left: 10px;
 
     }
 

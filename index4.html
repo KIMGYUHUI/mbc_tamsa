@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Nanum+Gothic|Nanum+Gothic+Coding|Noto+Sans+KR:400,700,900&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+    <title>MBC 탐사기획팀</title>
+</head>
+
+<body>
+    <header>
+        <div class= "mbclogo"> 
+            <a href="http://imnews.imbc.com/newszoomin/groupnews/index.html">
+                <img class="mbclogo" src="./mbclogo.jpg" width="80"> 
+            </a>
+        </div>
+
+        <div class= "탐사기획팀">
+            <h2>MBC 탐사기획팀</h2>
+        </div>
+
+        <nav class="navBar">
+            <ul>
+                <a href="#report">
+                    <li>제보</li>
+                </a>
+                <a href="#material">
+                    <li>자료창고</li> 
+                </a>
+                <a href="#tamsa">
+                    <li>탐사보도</li>
+                </a>
+                <a href="#member">
+                    <li>구성원 소개</li>
+                </a> 
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- <div class="mainImageSlider">
+            <a href="http://imnews.imbc.com/newszoomin/groupnews/groupnews_4/index2.html">
+                <img class="mainImage" src= "캡처.JPG">
+            </a>
+        </div> -->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="http://imnews.imbc.com/newszoomin/groupnews/groupnews_4/index2.html">  
+                    <img src="캡처.JPG" class="d-block w-100" alt="..." height="500px">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="tamsadetail.html">
+                    <img src="세월호 수정.JPG" class="d-block w-100" alt="..." height="500px">
+                    </a>  
+                  </div>
+                  <div class="carousel-item">
+                    <a href="tamsadetail2.html">  
+                    <img src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/artimage/2019/10/15/groupnews_a/hsauthor.png" class="d-block w-100" alt="..." height="500px">
+                  </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+        <article id="report">
+            <h1 class="articleTitle">제보</h1>
+            <div class="articleContect">
+                <h1>[MBC 탐사기획팀은 24시간 제보를 기다립니다]</h1>
+                <div class="contactWorks">
+                    <img class="contactWorksimage" src="data:image/png;base64,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">
+                    <a class="email" href="mailto:mbctamsa@naver.com">
+                        <h2>mbctamsa@naver.com</h2>
+                    </a>
+                </div>
+
+                <div class="contactWorks">
+                    <img class="contactWorksimage" src="https://image.flaticon.com/icons/svg/2111/2111683.svg" alt="">
+                    <h2>카카오톡 플러스 친구 'MBC 탐사기획팀'</h2>
+                </div>
+
+                <div class="contactWorks">
+                        <img class= "contactWorksimage" src="https://png.pngtree.com/png-vector/20190129/ourlarge/pngtree-calling-vector-icon-png-image_355993.jpg" alt="">
+                        <h2>02-789-0666</h2>
+                    </div>
+
+            <a class="jebo" href="mailto:mbctamsa@naver.com">    
+                <div class="reportButton">
+                    <h2>제보하러 가기</h2>
+                </div>        
+            </a>
+            
+            </div>
+        </article> 
+
+        <article id="material">
+            <h1 class="articleTitle">자료창고</h1>
+                <div class="artContentContainer">
+                    <div class="materialBox">
+                        <a class="LittleTitle" href="http://imnews.imbc.com/newszoomin/groupnews/groupnews_4/index2.html">
+                            <img class="imageBox" src="타임라인.JPG" alt="" width="150px">
+                            <h5>세월호 구조헬기 25대, 하루종일<br>
+                                뭐했나?</h5>
+                        </a>
+                    </div>
+
+                    <div class="materialBox">
+                        <a class="LittleTitle" href="https://infogram.com/1-1hxj48j1pdrq2vg">
+                            <img class="imageBox" src="http://img.imnews.imbc.com/news/newsInsight/__icsFiles/afieldfile/2019/10/01/k20191001-5.jpg" alt="" width="150px">
+                        <h5>한화① 베트남의 빈 사무실과 <br>
+                            태평로의 조그만 사무실</h5>
+                    </div>
+                    <div class="materialBox">
+                        <a class="LittleTitle" href="https://infogram.com/1-1hxj48j1pdrq2vg">
+                            <img class="imageBox" src="최애.JPG" alt="" width="300">
+                        <h5>시장님의 최애 살림살이 전격공개</h5>
+                    </div>
+                    <div class="materialBox">
+                        <a class="LittleTitle" href="http://imnews.imbc.com/newszoomin/groupnews/5209383_24487.html?menuid=groupnews#/">
+                            <img class="imageBox" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/artimage/2019/03/18/groupnewst_a/yoonjoongcho.png" alt="" width="300">
+                        <h5>우리 아이 학교 석면 정보는?</h5>
+                    </div>
+                        </a>
+                </div>
+            </article>
+
+            <div class="moresee">
+                <a href="moreinformation.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">더보기</a>
+            </div>
+
+            <article id="tamsa">
+                <h1 class="articleTitle">탐사보도</h1>
+                <div class="artContentContainer">
+                    <a class="LittleTitle" href="tamsadetail.html">
+                    <div class="materialBox">
+                        <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/afieldfile/2019/11/22/k20191101-1_5_1.jpg" alt="" width="300">
+                        <h5>세월호 구조학생… 헬기 못 태워 <br>
+                            놓친 '골든타임'</h5>
+                    </a>        
+                    </div>
+                    <a class="LittleTitle" href="tamsadetail2.html">
+                    <div class="materialBox">
+                        <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/afieldfile/2019/10/15/hsauthor_thum_4.png" alt="" width="300">
+                        <h5>고교생 논문 저자, 어떻게<br>
+                             만들어지나?</h5>
+                    </div>
+                    </a>
+                    <a class="LittleTitle" href="tamsadetail3.html">
+                    <div class="materialBox">
+                        <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/afieldfile/2019/09/23/groupnews_3_1.png" alt="" width="300">
+                        <h5>한화, 수상한 해외 진출</h5>
+                    </div>
+                    </a>
+                    <a class="LittleTitle" href="tamsadetail4.html">
+                    <div class="materialBox">
+                        <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/afieldfile/2019/09/23/groupnews_1_1.png" alt="" width="300">
+                        <h5>개통 하루만에 안전진단</h5>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="artContentContainer">
+                    <a class="LittleTitle" href="tamsadetail5.html">
+                        <div class="materialBox">
+                            <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/artimage/2019/06/27/groupnews_a/mainimg_1.png" alt="" width="300">
+                            <h5>집중 해부 '1급 관사'</h5>
+                        </a>        
+                        </div>
+                        <a class="LittleTitle" href="tamsadetail6.html">
+                        <div class="materialBox">
+                            <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/afieldfile/2019/03/18/artimgpreview_1.jpg" alt="" width="300">
+                            <h5>석면지도가 '엉터리'인 학교는?</h5>
+                        </div>
+                        </a>
+                        <a class="LittleTitle" href="tamsadetail7.html">
+                        <div class="materialBox">
+                            <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/afieldfile/2019/01/17/oversea_img2_1.png" alt="" width="300">
+                            <h5>의원님은 해외 출장 중</h5>
+                        </div>
+                        </a>
+                        <a class="LittleTitle" href="tamsadetail8.html">
+                        <div class="materialBox">
+                            <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/afieldfile/2019/01/17/thum_1.jpg" alt="" width="300">
+                            <h5>의원님의 '수상한 연구비'</h5>
+                        </div>
+                        </a>
+                    </a>
+                </div>
+
+                <div class="artContentContainer">
+                    <a class="LittleTitle" href="tamsadetail9.html">
+                        <div class="materialBox">
+                            <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/afieldfile/2018/12/19/artimgpreview_5.jpg" alt="" width="300">
+                            <h5>선거 비용 '미반납자' 단독 공개</h5>
+                        </a>        
+                        </div>
+                        <a class="LittleTitle" href="tamsadetail10.html">
+                        <div class="materialBox">
+                            <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/artimage/2018/11/19/groupnews_a/image4.png" alt="" width="300">
+                            <h5>'자동차 브레이크 결함'의<br> 
+                                위험한 이야기</h5>
+                        </div>
+                        </a>           
+                    </a>
+                </div>
+
+        
+            </article>
+
+    
+            <article id="member">
+                    <h1 class="articleTitle">구성원 소개</h1>
+                    <div class="memberContainer">
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="">
+                            <h4>백승우 기자</h4>
+                            <a href="mailto@likehanbin@gmail.com">
+                                <h4>likehanbin@gmail.com</h4>
+                            </a>
+                        </div>
+    
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="">
+                            <h4>남상호 기자</h4>
+                            <a href="mailto@likehanbin@gmail.com">
+                                <h4>likehanbin@gmail.com</h4>
+                            </a>
+                        </div>
+    
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="">
+                            <h4>최유찬 기자</h4>
+                            <a href="mailto@likehanbin@gmail.com">
+                                <h4>likehanbin@gmail.com</h4>
+                            </a>
+                        </div>
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="">
+                            <h4>장슬기 기자</h4>
+                            <a href="mailto@likehanbin@gmail.com">
+                                <h4>likehanbin@gmail.com</h4>
+                            </a>
+                        </div>
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="">
+                            <h4>김유나 리서처</h4>
+                            <a href="mailto@likehanbin@gmail.com">
+                                <h4>likehanbin@gmail.com</h4>
+                            </a>
+                        </div>
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="">
+                            <h4>김규희 리서처</h4>
+                            <a href="mailto@likehanbin@gmail.com">
+                                <h4>kbie1706@naver.com</h4>
+                            </a>
+                        </div>
+    
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="" >
+                            <h4>최유림 AD</h4>
+                            <a href="mailto@kbie1706@naver.com">
+                                <h4>likehanbin@gmail.com</h4>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+        </main>
+        <footer>
+            <div class="footerContent">
+                <h1>
+                    MBC NEWS
+                </h1>
+                <h5>
+                    (주)문화방송.   대표이사 최승호<br>
+                        서울시 마포구 성암로 267 (03925)<br>
+                        MBC 대표전화 02-789-0011<br>
+                        Copyright© Since 1996, MBC All rights reserved.<br>
+                </h5>
+            </div>
+        </footer>
+
+
+
+    </body>
+    </html>
+    </main>
+</body>
+</html>
